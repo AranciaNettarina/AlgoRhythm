@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoRhythm</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <h1 class="titolo">REGISTER IN ALGORHYTHM USING SPOTIFY CREDENTIALS</h1>
+    <form method='post' action='user.php' id="userForm" enctype="multipart/form-data">
+        Email <input type='text' name='Email'><br><br>
+        DisplayName <input type='text' name='DisplayName'><br><br>
+        Password <input type='password' id='password' name='Password'> <button type="button" id="password-toggle">👀</button><br><br>
+        Image <input type='file' name='Image'><br><br>
+        <input class="large-button" type='submit' value='Invia'>
+    </form>
+    <h1 class="titolo">OR CONTINUE WITHOUT AN ALGORHYTHM ACCOUNT</h1>
+    <button id="myButton" class="large-button" >
+        <a href="../AlgoRhythm/home.php" class="large-button">Premi qui</a>
+        </button>
+    <h1 class="titolo">DO YOU ALREADY HAVE AN ALGORHYTHM ACCOUNT? SIGN IN</h1>
+    <button class="large-button" onclick="window.location.href='sign_in.html';">Premi qui</button>
+</body>
+</html>

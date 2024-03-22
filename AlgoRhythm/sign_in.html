@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlgoRhythm</title>
+    <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+    <h1 class="titolo">SIGN IN ALGORHYTHM</h1>
+    <form method='get' action='searching.php' id="userForm">
+        DisplayName <input type='text' name='DisplayName'><br><br>
+        Password <input type='password' id='password' name='Password'> <button type="button" id="password-toggle">👀</button><br><br>
+        <input type='submit' value='Invia'>
+    </form>
+    <script>
+        const passwordInput = document.getElementById('password');
+        const toggleButton = document.getElementById('password-toggle');
+    
+        toggleButton.addEventListener('click', function() {
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleButton.textContent = '🙈';
+            } else {
+                passwordInput.type = 'password';
+                toggleButton.textContent = '👀';
+            }
+        });
+    </script>
+</body>
+</html>
